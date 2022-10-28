@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/piment.min.css">
+    <link rel="stylesheet" href="/assets/css/pimentcss.min.css">
     <title>Le journal de Webmonster Community</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
@@ -162,6 +162,19 @@
     </div>
 </header>
 <main class="container">
+    <div class="row gap-2">
+        <div class="col-xs-12">
+            <h2 class="text-dark font-light">Création</h2>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="block p-2">
+                <h3 class="card-title">Martinique</h3>
+                <div class="card-body">
+                    <p>dimanche 29 mai 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer class="container mb-4 mt-4">
     <div class="row">
