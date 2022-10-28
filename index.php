@@ -155,15 +155,141 @@
 <main class="container">
     <div class="row gap-2">
         <div class="col-xs-12">
-            <h2 class="text-dark font-light">Création</h2>
+            <h2 class="text-gray">
+                <svg width="45" height="45" fill="#6d6d6d" id="logo-webmonster" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <path id="face" class="emblem" d="M50,3.3C24.2,3.3,3.3,24.2,3.3,50S24.2,96.7,50,96.7S96.7,75.8,96.7,50S75.8,3.3,50,3.3z M56.1,26.3
+                    c4.2,0,7.7,3.4,7.7,7.7s-3.4,7.7-7.7,7.7c-4.2,0-7.7-3.4-7.7-7.7S51.8,26.3,56.1,26.3z M40.2,29.5c2.8,0,5.1,2.3,5.1,5.1
+                    c0,2.8-2.3,5.1-5.1,5.1c-2.8,0-5.1-2.3-5.1-5.1C35.2,31.8,37.4,29.5,40.2,29.5z M74.7,58.3c-0.2,0.8-0.5,1.5-0.9,2.3
+                    c-2.3,5.2-5.2,8.4-8.5,10.3c-1.1,0.6-2.2,1.1-3.3,1.5c-3.6,1.2-7.6,1.4-12,1.4c-4.2,0-8.5-0.8-12.3-2.3c-1.2-0.5-2.4-1-3.5-1.6
+                    c-4.1-2.1-7.5-5.1-9.1-8.5c-0.4-0.8-0.7-1.5-1-2.3c-2.4-6.6-1.8-13.2,0.4-15.8c0.9-1.1,2.7-1.2,5-0.8c1.1,0.2,2.4,0.6,3.7,1
+                    c5.1,1.5,11.4,4,16.8,3.8c5.3-0.1,10.9-2.3,15.2-3.4c1.3-0.3,2.6-0.6,3.6-0.7c0.6,0,1.2,0,1.7,0.1C74.1,44.4,77,50.8,74.7,58.3z"></path>
+                    <circle id="oeil-gauche" class="emblem" cx="42.2" cy="35" r="2"></circle>
+                    <circle id="oeil-droit" class="emblem" cx="52.7" cy="35" r="2.9"></circle>
+                </svg>
+                Salut, monster!
+            </h2>
         </div>
-        <div class="col-xs-12 col-md-6">
-            <div class="block p-2">
-                <h3 class="card-title">Martinique</h3>
-                <div class="card-body">
-                    <p>dimanche 29 mai 2022</p>
+        <style>
+            .timeline {
+                position: relative;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .timeline::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                background-color: #0f0ff5;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3px;
+            }
+            .container-timeline {
+                padding: 10px 40px;
+                position: relative;
+                background-color: inherit;
+                width: 50%;
+            }
+            .container-timeline::after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right: -15px;
+                background-color: #0f0ff5;
+                border: 4px solid #0f0ff5;
+                top: 15px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+            .left {
+                left: 0;
+            }
+            .right {
+                left: 50%;
+            }
+            .left::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                right: 30px;
+                border: medium solid white;
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent white;
+            }
+            .right::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: 30px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            .right::after {
+                left: -16px;
+            }
+            .content {
+                padding: 20px 30px;
+                background-color: white;
+                position: relative;
+                border-radius: 6px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .timeline::after {
+                    left: 31px;
+                }
+                .container-timeline {
+                    width: 100%;
+                    padding-left: 70px;
+                    padding-right: 25px;
+                }
+                .container-timeline::before {
+                    left: 60px;
+                    border: medium solid white;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent white transparent transparent;
+                }
+                .left::after, .right::after {
+                    left: 15px;
+                }
+                .right {
+                    left: 0%;
+                }
+            }
+        </style>
+        <div class="col-xs-12 col-md-12">
+            <?php
+            $json = file_get_contents("journal-webmonster.json");
+            $data = json_decode($json, true);
+            if($data){
+                $x=1;
+                foreach ($data AS $article){
+            ?>
+                <div class="timeline">
+                    <article class="p-2">
+                        <div class="container-timeline <?php if($x % 2 == 0){ echo 'right'; }else{ echo 'left'; } ?>">
+                            <div class="content">
+                                <p class="text-gray">Le <?=date("d/m/Y à H:i",strtotime($article['releaseDate']));?></p>
+                                <!--<a class="text-blue text-hover-red no-underline" href="/<?=$article['slug'];?>/" title="<?=$article['title'];?>">-->
+                                <h3 class="card-title font-bold"><?=$article['title'];?></h3>
+                                <!--</a>-->
+                                <div class="card-body">
+                                    <p><?=$article['description'];?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </div>
+            <?php $x++;}} ?>
         </div>
     </div>
 </main>

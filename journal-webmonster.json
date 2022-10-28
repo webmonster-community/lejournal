@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Première réunion en chat",
+    "slug" : "premiere-reunion-chat",
+    "author": "XavierS",
+    "description": "Lancement du premier live chat",
+    "article": "",
+    "subjects":[
+      "webmonster",
+      "communication"
+    ],
+    "releaseDate": "2022-10-31T19:00:00.000Z"
+  },
+  {
+    "title": "Première communication sur LinkedIn",
+    "slug" : "premiere-communication-linkedin",
+    "author": "XavierS",
+    "description": "Création du serveur Discord le dimanche 29 mai 2022.",
+    "article": "",
+    "subjects":[
+      "webmonster",
+      "communication"
+    ],
+    "releaseDate": "2022-10-28T19:12:05.000Z"
+  },
+  {
+    "title": "Création Webmonster Community",
+    "slug" : "creation-webmonster-community",
+    "author": "XavierS",
+    "description": "Création du serveur Discord le dimanche 29 mai 2022.",
+    "article": "<p>Le collectif Webmonster a été créé en Martinique le dimanche 29 mai 2022. Le soir nous étions déjà 35 sur le serveur Discord.</p>",
+    "subjects":[
+      "webmonster",
+      "community"
+    ],
+    "releaseDate": "2022-10-28T16:47:02.000Z"
+  }
+]
