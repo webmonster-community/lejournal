@@ -196,7 +196,7 @@
                 position: absolute;
                 width: 30px;
                 height: 30px;
-                right: -15px;
+                right: 5px;
                 background-color: #0f0ff5;
                 border: 4px solid #0f0ff5;
                 top: 15px;
@@ -204,7 +204,7 @@
                 z-index: 1;
             }
             .left {
-                left: 0;
+                left: 20px;
             }
             .right {
                 left: 50%;
@@ -245,21 +245,21 @@
 
             @media screen and (max-width: 600px) {
                 .timeline::after {
-                    left: 31px;
+                    left: 22px;
                 }
                 .container-timeline {
                     width: 100%;
-                    padding-left: 70px;
-                    padding-right: 25px;
+                    padding-left: 0;
+                    padding-right: 15px;
                 }
                 .container-timeline::before {
-                    left: 60px;
+                    left: 15px;
                     border: medium solid white;
                     border-width: 10px 10px 10px 0;
                     border-color: transparent white transparent transparent;
                 }
                 .left::after, .right::after {
-                    left: 15px;
+                    left: -45px;
                 }
                 .right {
                     left: 0%;
@@ -280,7 +280,7 @@
                             <div class="content">
                                 <p class="text-gray">Le <?=date("d/m/Y à H:i",strtotime($article['releaseDate']));?></p>
                                 <!--<a class="text-blue text-hover-red no-underline" href="/<?=$article['slug'];?>/" title="<?=$article['title'];?>">-->
-                                <h3 class="card-title font-bold"><?=$article['title'];?></h3>
+                                <h4 class="card-title font-bold mb-1"><?=$article['title'];?></h4>
                                 <!--</a>-->
                                 <div class="card-body">
                                     <p><?=$article['description'];?></p>
