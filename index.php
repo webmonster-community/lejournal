@@ -136,6 +136,111 @@
             border-right: 0;
             font-size: 2.2652rem;
         }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #0f0ff5;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .container-timeline {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .container-timeline::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 5px;
+            background-color: #0f0ff5;
+            border: 4px solid #0f0ff5;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 20px;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,.132), 0 0.3px 0.9px 0 rgba(0,0,0,.108);
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 22px;
+            }
+            .container-timeline {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 15px;
+            }
+            .container-timeline::before {
+                left: 15px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            .left::after, .right::after {
+                left: -45px;
+            }
+            .right {
+                left: 6%;
+            }
+        }
+        ul.nostyle {
+            margin:0;padding:0;display: inline-flex;gap:0.5rem;list-style: none;
+        }
+        ul.nostyle > li {
+            font-size: 1rem;
+        }
+        ul.nostyle > li:not(:last-child):after {
+            content: ', ';
+        }
     </style>
 </head>
 <body>
@@ -169,103 +274,6 @@
                 Salut, monster!
             </h2>
         </div>
-        <style>
-            .timeline {
-                position: relative;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            .timeline::after {
-                content: '';
-                position: absolute;
-                width: 6px;
-                background-color: #0f0ff5;
-                top: 0;
-                bottom: 0;
-                left: 50%;
-                margin-left: -3px;
-            }
-            .container-timeline {
-                padding: 10px 40px;
-                position: relative;
-                background-color: inherit;
-                width: 50%;
-            }
-            .container-timeline::after {
-                content: '';
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                right: 5px;
-                background-color: #0f0ff5;
-                border: 4px solid #0f0ff5;
-                top: 15px;
-                border-radius: 50%;
-                z-index: 1;
-            }
-            .left {
-                left: 20px;
-            }
-            .right {
-                left: 50%;
-            }
-            .left::before {
-                content: " ";
-                height: 0;
-                position: absolute;
-                top: 22px;
-                width: 0;
-                z-index: 1;
-                right: 30px;
-                border: medium solid white;
-                border-width: 10px 0 10px 10px;
-                border-color: transparent transparent transparent white;
-            }
-            .right::before {
-                content: " ";
-                height: 0;
-                position: absolute;
-                top: 22px;
-                width: 0;
-                z-index: 1;
-                left: 30px;
-                border: medium solid white;
-                border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
-            }
-            .right::after {
-                left: -16px;
-            }
-            .content {
-                padding: 20px 30px;
-                background-color: white;
-                position: relative;
-                border-radius: 6px;
-            }
-
-            @media screen and (max-width: 600px) {
-                .timeline::after {
-                    left: 22px;
-                }
-                .container-timeline {
-                    width: 100%;
-                    padding-left: 0;
-                    padding-right: 15px;
-                }
-                .container-timeline::before {
-                    left: 15px;
-                    border: medium solid white;
-                    border-width: 10px 10px 10px 0;
-                    border-color: transparent white transparent transparent;
-                }
-                .left::after, .right::after {
-                    left: -45px;
-                }
-                .right {
-                    left: 0%;
-                }
-            }
-        </style>
         <div class="col-xs-12 col-md-12">
             <?php
             $json = file_get_contents("journal-webmonster.json");
@@ -277,14 +285,22 @@
                 <div class="timeline">
                     <article class="p-2">
                         <div class="container-timeline <?php if($x % 2 == 0){ echo 'right'; }else{ echo 'left'; } ?>">
-                            <div class="content">
+                            <div class="content block">
                                 <p class="text-gray">Le <?=date("d/m/Y à H:i",strtotime($article['releaseDate']));?></p>
                                 <!--<a class="text-blue text-hover-red no-underline" href="/<?=$article['slug'];?>/" title="<?=$article['title'];?>">-->
                                 <h4 class="card-title font-bold mb-1"><?=$article['title'];?></h4>
                                 <!--</a>-->
                                 <div class="card-body">
                                     <p><?=$article['description'];?></p>
+                                    <?php if(!empty($article['link'])){ ?>
+                                        🔗 <a href="<?=$article['link'];?>" target="_blank" rel="noopener nofollow" class="text-success text-hover-blue">Voir le site</a>
+                                    <?php } ?>
                                 </div>
+                                <ul class="nostyle">
+                                    <?php foreach($article['subjects'] AS $subjects){ ?>
+                                        <li><?=$subjects;?></li>
+                                    <?php } ?>
+                                </ul>
                             </div>
                         </div>
                     </article>
