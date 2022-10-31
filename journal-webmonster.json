@@ -65,6 +65,19 @@
     "releaseDate": "2022-09-29T19:00:00.000Z"
   },
   {
+    "title": "\uD83C\uDF36 Piment CSS",
+    "slug" : "piment-css",
+    "author": "XavierS",
+    "description": "Lancement de Piment CSS un micro framework css et starter kit.",
+    "link": "https://pimentcss.webmonster.tech/",
+    "subjects":[
+      "css",
+      "framework",
+      "piment"
+    ],
+    "releaseDate": "2022-09-29T19:00:00.000Z"
+  },
+  {
     "title": "\uD83C\uDFAB World Tech Kafé",
     "slug" : "world-tech-kafe",
     "author": "XavierS",
