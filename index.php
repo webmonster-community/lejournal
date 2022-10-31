@@ -309,8 +309,9 @@ function dateToFrench($date, $format)
             display: inline-flex;
             gap: 0.5rem;
             list-style: none;
+            padding-top: .4rem;
             padding-bottom: .2rem;
-            border-bottom: 1px solid #2632FF;
+            border-top: 1px solid #2632FF;
         }
 
         ul.nostyle > li {
