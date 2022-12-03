@@ -13,6 +13,19 @@
     "releaseDate": "2022-12-16T18:00:00.000Z"
   },
   {
+    "title": "\uD83C\uDFAB Salon Webmonster 2023",
+    "slug" : "salon-webmonster-2023",
+    "author": "XavierS",
+    "description": "Réunion pour présenter le projet de salon du collectif Webmonster en 2023.",
+    "link": "",
+    "subjects":[
+      "salon",
+      "tech",
+      "rencontres"
+    ],
+    "releaseDate": "2022-12-01T18:00:00.000Z"
+  },
+  {
     "title": "\uD83D\uDC69\uD83C\uDFFF Les femmes de la tech",
     "slug" : "femmes-tech",
     "author": "XavierS",
