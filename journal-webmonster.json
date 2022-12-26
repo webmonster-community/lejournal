@@ -1,8 +1,73 @@
 [
   {
+    "title": "Le guide pour comprendre les enjeux du SEO en Martinique",
+    "slug" : "guide-comprendre-enjeux-seo-martinique",
+    "author": "XavierS",
+    "description": "3EY Consulting et Webmonster Community vous propose son guide du SEO en Martinique.",
+    "link": "https://seo.webmonster.tech",
+    "subjects":[
+      "seo",
+      "référencement naturel",
+      "martinique"
+    ],
+    "releaseDate": "2022-12-23T13:00:00.000Z"
+  },
+  {
+    "title": "Victoire du collectif Webmonster lors d'un hackathon de 27h en Guadeloupe",
+    "slug" : "victoire-collectif-webmonster-hackathon-guadeloupe",
+    "author": "XavierS",
+    "description": "A lire l'article de France Antilles Martinique.",
+    "link": "https://www.martinique.franceantilles.fr/actualite/economie/victoire-du-collectif-webmonster-lors-dun-hackathon-de-27h-en-guadeloupe-916188.php",
+    "subjects":[
+      "hackathon",
+      "webmonster",
+      "guadeloupe"
+    ],
+    "releaseDate": "2022-12-23T07:00:00.000Z"
+  },
+  {
+    "title": "Retour d'expérience : Hackathon en Guadeloupe",
+    "slug" : "retour-experience-hackathon-guadeloupe",
+    "author": "XavierS",
+    "description": "Retour sur le Hackathon en Guadeloupe avec les membres de la team Webmonster.",
+    "link": "https://discord.gg/QmKngJuuPg?event=1054969676075122698",
+    "subjects":[
+      "hackathon",
+      "rencontres",
+      "expérience"
+    ],
+    "releaseDate": "2022-12-18T15:00:00.000Z"
+  },
+  {
+    "title": "Victoire ! \uD83C\uDFC6 Webmonster remporte le Hackathon en Guadeloupe",
+    "slug" : "victoire-webmonster-hackathon-guadeloupe",
+    "author": "XavierS",
+    "description": "Webmonster vient de remporter un hackathon en Guadeloupe organisé par Nautique Nord Basse-Terre, une association de Sainte-Rose dirigée par Fred Citadelle.",
+    "link": "https://journal.webmonster.tech/assets/files/COMMUNIQUE-DE-PRESSE-HACKATHON-2022.pdf",
+    "subjects":[
+      "hackathon",
+      "rencontres",
+      "guadeloupe"
+    ],
+    "releaseDate": "2022-12-18T15:00:00.000Z"
+  },
+  {
+    "title": "\uD83D\uDCBB Hackathon Guadeloupe",
+    "slug" : "hackathon-guadeloupe",
+    "author": "XavierS",
+    "description": "Nous participons au #Hackathon « numérique éducatif » sur invitation de Nautique Notre Basse-Terre \uD83D\uDE4C",
+    "link": "https://www.nautik-nbt.com/",
+    "subjects":[
+      "hackathon",
+      "rencontres",
+      "guadeloupe"
+    ],
+    "releaseDate": "2022-12-16T09:00:00.000Z"
+  },
+  {
     "title": "\uD83C\uDFAD Branding, création de la marque du Théâtre de Macouria",
     "slug" : "branding-creation-marque-theatre-macouria",
-    "author": "Elddie Alexander",
+    "author": "Elodie Alexander",
     "description": "En mars 2022, le Théâtre de Macouria a lancé son appel à proposition pour la création de sa nouvelle marque. Projet d'arts vivants en pleine évolution, l’intention créative a été de valoriser les différents axes du projet à travers des marques, dans une marque. Ceci afin de construire une identité capable d’identifier et de valoriser la multi-dimension du projet et qui soit à appropriable par l’équipe, les publics, les partenaires et le territoire.\n\nÀ l’occasion d’un webinaire pour la communauté Webmonster, Élodie Alexander, la designer dont le travail a été retenu, viendra présenter son processus de création. Venez découvrir les différentes phases d’un projet de création de marque et poser toutes vos questions.\n\nCet événement sera enregistré pour une rediffusion sur Youtube.\n18:00 - Heure de Martinique",
     "link": "https://discord.gg/4gsDEywkXp?event=1041786260416635010",
     "subjects":[
