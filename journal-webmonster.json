@@ -1,5 +1,18 @@
 [
   {
+    "title": "Webmonster 2023, le salon",
+    "slug" : "webmonster-2023-salon",
+    "author": "XavierS",
+    "description": "Plongez dans l’univers de la tech, son histoire et ses métiers ! du vendredi 17 au samedi 18 février 2023",
+    "link": "https://salon.webmonster.tech",
+    "subjects":[
+      "salon",
+      "tech",
+      "webmonster 2023"
+    ],
+    "releaseDate": "2022-12-23T13:00:00.000Z"
+  },
+  {
     "title": "Le guide pour comprendre les enjeux du SEO en Martinique",
     "slug" : "guide-comprendre-enjeux-seo-martinique",
     "author": "XavierS",
