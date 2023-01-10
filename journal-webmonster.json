@@ -1,5 +1,18 @@
 [
   {
+    "title": "\uD83C\uDFA5 Webmonster est sur Youtube",
+    "slug" : "webmonster-youtube",
+    "author": "XavierS",
+    "description": "Lancement de la chaîne Youtube de Webmonster",
+    "link": "https://www.youtube.com/@webmonstertech",
+    "subjects":[
+      "salon",
+      "tech",
+      "webmonster 2023"
+    ],
+    "releaseDate": "2022-12-23T13:00:00.000Z"
+  },
+  {
     "title": "Webmonster 2023, le salon",
     "slug" : "webmonster-2023-salon",
     "author": "XavierS",
