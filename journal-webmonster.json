@@ -1,5 +1,209 @@
 [
   {
+    "title": "Atelier : Plongée dans l'Opendata",
+    "slug" : "atelier-plongee-opendata",
+    "author": "Ronny",
+    "description": "Créer une cartographie de l'écosystème numérique des Antilles-Guyane.",
+    "link": "",
+    "subjects":[
+      "design",
+      "learning",
+      "css",
+      "html"
+    ],
+    "releaseDate": "2023-12-26T21:00:00.000Z"
+  },
+  {
+    "title": "A la découverte des métiers du numérique",
+    "slug" : "decouverte-metiers-numerique",
+    "author": "Ronny",
+    "description": "Un atelier pour découvrir tous les métiers du numérique proposé par la team Webmonster.",
+    "link": "",
+    "subjects":[
+      "rencontres",
+      "orientation"
+    ],
+    "releaseDate": "2023-11-30T19:00:00.000Z"
+  },
+  {
+    "title": "Atelier : Introduction au PHP pour les développeurs Web",
+    "slug" : "atelier-introduction-php-developpeurs-web",
+    "author": "Ronny",
+    "description": "Créer un outil de gestion de prise de rendez-vous front et back.",
+    "link": "",
+    "subjects":[
+      "design",
+      "learning",
+      "css",
+      "html"
+    ],
+    "releaseDate": "2023-12-19T21:00:00.000Z"
+  },
+  {
+    "title": "Atelier : Expertise Front-End en HTML & CSS",
+    "slug" : "atelier-maitrisez-styles-css-modernes",
+    "author": "Ronny",
+    "description": "Développer le front-end pour le design system Webmonster.",
+    "link": "",
+    "subjects":[
+      "design",
+      "learning",
+      "css",
+      "html"
+    ],
+    "releaseDate": "2023-12-12T21:00:00.000Z"
+  },
+  {
+    "title": "Atelier : Maîtrisez les styles CSS modernes",
+    "slug" : "atelier-maitrisez-styles-css-modernes",
+    "author": "Ronny",
+    "description": "Dédié aux développeurs front-end et designers souhaitant approfondir leurs compétences en codage, cet atelier est une occasion unique de construire un framework CSS from scratch.",
+    "link": "",
+    "subjects":[
+      "design",
+      "learning",
+      "css"
+    ],
+    "releaseDate": "2023-12-05T21:00:00.000Z"
+  },
+  {
+    "title": "Rencontre avec Olivier Patole",
+    "slug" : "rencontre-olivier-patole",
+    "author": "Ronny",
+    "description": "Rencontre avec Olivier Patole, CEO de TRUSTABLE, une start-up spécialisée dans l’évaluation du risque Cyber",
+    "link": "",
+    "subjects":[
+      "rencontres",
+      "cybersécurité"
+    ],
+    "releaseDate": "2023-11-30T19:00:00.000Z"
+  },
+  {
+    "title": "Atelier : Progresser en design",
+    "slug" : "atelier-progresser-design",
+    "author": "Ronny",
+    "description": "Cocréer un design moderne qui nous ressemble et qui pourrait habiller les sites de Webmonster",
+    "link": "",
+    "subjects":[
+      "design",
+      "learning"
+    ],
+    "releaseDate": "2023-11-28T21:00:00.000Z"
+  },
+  {
+    "title": "Webmonster au salon NEC 2023 en Martinique",
+    "slug" : "webmonster-salon-nec-2023-martinique",
+    "author": "Ronny",
+    "description": "Webmonster présente des projets innovants dans l'inclusion numérique à l'Institut Martiniquais du Sport",
+    "link": "",
+    "subjects":[
+      "salon",
+      "rencontres",
+      "martinique"
+    ],
+    "releaseDate": "2023-11-24T11:00:00.000Z"
+  },
+  {
+    "title": "Atelier : Rédaction d'un contrat de prestation de service",
+    "slug" : "atelier-redaction-contrat-prestation-service",
+    "author": "Ronny",
+    "description": "L'objectif est que chaque participant reparte avec une compréhension solide de la manière de rédiger un contrat de prestation de service et la confiance nécessaire pour négocier des termes qui protègent leurs intérêts et ceux de leurs clients.",
+    "link": "",
+    "subjects":[
+      "learning"
+    ],
+    "releaseDate": "2023-11-21T21:00:00.000Z"
+  },
+  {
+    "title": "Nuit de l'orientation 2023",
+    "slug" : "nuit-orientation-2023",
+    "author": "Ronny",
+    "description": "Webmonster présente les métiers du numérique à la 7ème édition de la « Nuit de l’Orientation »",
+    "link": "",
+    "subjects":[
+      "orientation",
+      "rencontres",
+      "martinique"
+    ],
+    "releaseDate": "2023-11-18T15:00:00.000Z"
+  },
+  {
+    "title": "ZEBOX & Webmonster",
+    "slug" : "zebox-webmonster-guadeloupe",
+    "author": "Ronny",
+    "description": "Rencontre entre la communauté ZEBOX et le collectif Webmonster",
+    "link": "",
+    "subjects":[
+      "hackathon",
+      "rencontres",
+      "guadeloupe"
+    ],
+    "releaseDate": "2023-11-17T10:00:00.000Z"
+  },
+  {
+    "title": "Meetup Webmonster Mai 2023 !",
+    "slug" : "meetup-webmonster-mai-2023",
+    "author": "Ronny",
+    "description": "Rencontrez la communauté Webmonster à Lakoudigital.",
+    "link": "",
+    "subjects":[
+      "réunion",
+      "martinique"
+    ],
+    "releaseDate": "2023-05-26T18:00:00.000Z"
+  },
+  {
+    "title": "Découvrir l'histoire de la Martinique avec le numérique",
+    "slug" : "decouvrir-histoire-martinique-numerique",
+    "author": "Ronny",
+    "description": "Première frise chronologique numérique de la Martinique avec <strong>Mélody MOUTAMALLE</strong> et <strong>Nora DOMI</strong>",
+    "link": "",
+    "subjects":[
+      "outils",
+      "martinique",
+      "culture",
+      "tech"
+    ],
+    "releaseDate": "2023-03-28T18:00:00.000Z"
+  },
+  {
+    "title": "Rencontre Webmonster du mois de Mars 2023 !",
+    "slug" : "rencontre-webmonster-mars-2023",
+    "author": "Ronny",
+    "description": "Rencontrez la communauté Webmonster à Lakoudigital.",
+    "link": "",
+    "subjects":[
+      "réunion",
+      "martinique"
+    ],
+    "releaseDate": "2023-03-03T18:00:00.000Z"
+  },
+  {
+    "title": "Webmonster 2023, le salon, c'est parti !",
+    "slug" : "webmonster-2023-salon-cest-parti",
+    "author": "Ronny",
+    "description": "Plongez pendant deux jours dans l’univers de la tech, son histoire et ses métiers !",
+    "link": "https://salon.webmonster.tech",
+    "subjects":[
+      "salon",
+      "tech",
+      "webmonster 2023"
+    ],
+    "releaseDate": "2023-02-17T13:00:00.000Z"
+  },
+  {
+    "title": "Rencontre Webmonster à Lakoudigital !",
+    "slug" : "rencontre-webmonster-lakoudigital",
+    "author": "Ronny",
+    "description": "Rencontrez la communauté Webmonster à Lakoudigital.",
+    "link": "",
+    "subjects":[
+      "réunion",
+      "martinique"
+    ],
+    "releaseDate": "2023-01-27T18:00:00.000Z"
+  },
+  {
     "title": "\uD83C\uDFA5 Webmonster est sur Youtube",
     "slug" : "webmonster-youtube",
     "author": "XavierS",
